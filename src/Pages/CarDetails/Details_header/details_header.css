@@ -11,9 +11,14 @@ body{
 .page {
   position: relative;
   z-index: 1;
-  margin-top: -350px;
+  margin-top: -450px;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
+}
+.page h1{
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 35px;
 }
 .lines {
   height: 5px;
@@ -30,19 +35,21 @@ body{
 }
 
 
-/* New Component */
+/* Car Details Component */
 .details_section{
-  margin-top: 200px;
+  margin-top: 300px;
   margin-left: 180px;
   margin-right: 180px;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   grid-template-areas:
   'detailsHeading detailRight'
   'selectedCarPic detailRight'
-  'selectedCarDetails detailRight'
+  'carInterior detailRight'
+  /* 'selectedCarDetails detailRight' */
   ;
 }
+
 .deatails_heading{
   width: 1163px;
   height: 119px;
@@ -60,19 +67,39 @@ body{
   margin-left: 60px;
   color: #333333; 
 }
+
 .selected_carPic{
   grid-area: selectedCarPic;
-  margin-top: -765px;
+  margin-top: -760px;
 }
 .selected_carPic img{
   width: 1163px;
 }
-.selected_carDetails{
-  grid-area: selectedCarDetails;
+
+.selected_carInterior{
+  grid-area: carInterior;
+  width: 1163px;
+  display: flex;
+  margin-top: -915px;
+  justify-content: space-between;
 }
+.selected_carInterior img{
+  width: 265px;
+  height: 147px;
+}
+
+/* .selected_carDetails{
+  grid-area: selectedCarDetails;
+  width: 1163px;
+}
+.selected_carDetails a{
+  text-decoration: none;
+} */
+
+
 .detail_right{
   grid-area: detailRight;
   height: 2449px;
   width: 367px;
-  background-color: black;
+  background-color: rgb(169, 156, 156);
 }
