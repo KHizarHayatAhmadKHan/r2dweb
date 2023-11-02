@@ -1,0 +1,55 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.top{
+    width: 1920px;
+    height: 54px;
+    background-color: #30D5C8;
+    /* display: none; */
+}
+.midNav{
+    position: absolute;
+    width: 1920px;
+    height: 78px;
+    top: 51px;
+    background-color: #333333;
+    /* display: none; */
+}
+.midNav img{
+    width: 68px;
+    height: 66px;
+    margin: 6px 0 6px 180px;
+    margin-left: 180px;
+}
+.country{
+    
+    width: 230px;
+    top: -81px;
+    left: 1098px;
+}
+
+.navbar{
+    width: 1920px;
+    height: 53px;
+    background-color: #F5F3F4;
+    margin-top: 77px;
+    display: flex;
+    align-items: center;
+}
+.navbar a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: #1F2B34;
+    font-size: 18px;
+    line-height: 13px;
+    font-weight: bold;
+}
+.navbar a:nth-child(1){
+    margin-left: 180px;
+}
+.navbar a:hover{
+    color: #30D5C8;
+    text-decoration: line-through;
+    cursor: pointer;
+    text-decoration: none;
+}
